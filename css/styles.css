@@ -1,0 +1,403 @@
+body{
+    position: relative;
+    top: 0;
+    left: 0;
+    
+    font-family: 'Nanum Myeongjo', serif;
+    color: #fff;
+
+}
+
+.nav-container{
+  position: absolute;
+  z-index: 1;
+}
+
+.front{
+  position: relative;
+  top: -100px;
+  z-index: 1;
+}
+
+.titlebar{
+
+  position: relative;
+
+  width: 100%;
+  padding: 30px;
+  
+ 
+}
+
+.underline1{
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top:85px;
+  border: none;
+  height: 0.2px;
+  background-color: #fff;
+  opacity: 0.5;
+  
+}
+
+.underline2{
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  border: none;
+  height: 0.2px;
+  background-color: #fff;
+  opacity: 0.5;
+  display: none;
+}
+
+.back-ground{
+  position: relative;
+  top:0;
+  left:0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/background-stars.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:#060047;
+ 
+}
+
+.main-menu{
+
+    position: relative;
+    top: -40px;
+    left: 170%;
+  }
+  
+  .sub-menu{
+    display: inline-block;
+    font-size: 9px;
+    margin: 0 10px;
+  }
+  
+  .menu-link{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* front page////////////////////////////////// */
+
+  .front{
+    position: absolute;
+    top:30%;
+  }
+ 
+  .main-window{
+    position: relative;
+    padding: 0 120px;
+  }
+  
+  .left-window, .right-window{
+    position: relative;
+    width: 45%;
+    display: inline-block;
+  }
+
+.planet-container{
+  
+    position: relative;
+    width: 280px;
+    height: 280px;
+    left: 40%;
+    top:-30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  
+
+ .description{
+  position: relative;
+  left: 35%;
+  top: -130px;
+  width: 70%;
+ }
+
+ 
+  footer{
+    position: fixed;
+    top: 77%;
+    left: 12%;
+    
+  }
+
+  .step-container{
+    position: fixed;
+    left: 59%;
+    top: 55%;
+    z-index: 3;
+   
+   }
+
+  .step{
+    position:relative;
+    width: 200px;
+    height: 25px;
+    margin: 15px 0;
+    border: 0.5px groove #fff;
+    text-align: left;
+    padding-left: 15px;
+    vertical-align: middle;
+    line-height: 25px;
+    cursor: pointer;
+    
+  }
+
+  .chamber2{
+    display: none;
+  }
+
+  .step:hover{
+    background-color: #6F1AB6;
+  }
+
+  .footer-div{
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    margin-right: 20px;
+    padding-left: 20px;
+    border: 0.5px groove #fff;
+  }
+
+  #checkbox, .check{
+    position: absolute;
+    top:50px;
+    display: none;
+    
+  }
+  .check{
+    right: -140%;
+    cursor: pointer;
+  }
+  
+
+  @media (max-width: 768px){
+    .brand{
+      position: relative;
+      display: block;
+      left: 30%;
+    }
+
+    .main-menu{
+
+      position: relative;
+      display: block;
+      top: 0;
+      left:-4%;
+      width: 100vw;
+    }
+
+    .sub-menu{
+      display: inline-block;
+      font-size: 10px;
+      margin: 0 20px;
+    }
+
+    .underline{
+     
+      top:105px;
+      
+    }
+
+    .left-window{
+      display: block;
+    }
+
+    .planet-container{
+  
+      width: 200px;
+      height: 200px;
+      left: 50%;
+      top: -50px;
+      
+    }
+
+    footer{
+      position: fixed;
+      top: 85%;
+      left: 12%;
+      
+    }
+
+    .footer-div{
+     
+      width: 120px;
+      margin-right: 10px;
+      
+    }
+
+    .footage{
+
+      font-size: 20px;
+    }
+
+  .step-container{
+
+      left: 65%;
+      top: 60%;
+     
+     }
+
+    .step{
+     
+      width: 160px;
+      height: 20px;
+      margin: 10px 0;
+      line-height: 20px;
+     
+    }
+
+    .right-window{
+
+      width: 55%;
+    }
+
+    .description{
+      left: -45px;
+      top: -40px;
+      width: 130%;
+     }
+
+     .right-window h1{
+      font-size: 20px;
+     }
+  
+  }
+
+
+  @media (max-width: 500px){
+
+    
+
+    .back-ground{
+      width: 550px;
+      height: 1100px;
+    }
+   
+    .check{
+      display: inline-block;
+      left: 160%;
+      top:55px;
+    }
+
+    .brand{
+      left: 0;
+    }
+
+    .main-menu{
+      position: relative;
+      top: -10px;
+      left:220%;
+      width: 30%;
+      height: 50%;
+    }
+
+    .sub-menu{
+      display: block;
+      line-height: 3;
+    }
+
+    #checkbox:checked ~ .main-menu{
+      position: relative;
+      top: -10px;
+      left:160%;
+      width: 30%;
+      height: 50%;
+      transition-duration: 1s;
+    }
+
+    .underline2{
+      display: block;
+      top: 130px;
+    }
+
+    .chamber1{
+      display: none;
+    }
+    .chamber2{
+      display: inline-block;
+    }
+
+    .step-container{
+      position: relative;
+      width: 500px;
+      left: 7%;
+      top: -1000px;
+    }
+    
+     .step{
+     
+      width: 130px;
+      height: 20px;
+      margin: 10px 0;
+      line-height: 20px;
+      border: none;
+      display: inline-block;
+     
+    }
+
+    .step:hover{
+      background-color:inherit;
+    }
+
+    .planet-container{
+  
+      width: 150px;
+      height: 150px;
+      left: 50%;
+      top: -180px;
+      
+    }
+    .right-window h1{
+      position: relative;
+      left: 40%;
+      font-size: 20px;
+     }
+    .main-window{
+      position: relative;
+      top: 0;
+      left: 5%;
+      padding: 0 90px;
+    }
+    .right-window{
+     
+      display: block;
+     
+      width: 100%;
+      top: -100px;
+    }
+    footer{
+      position: relative;
+      top: -450px;
+      width: 80%;
+      left: 15%;
+    }
+    .footer-div{
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      
+    }
+    footer p, .footage{
+     display: inline-block;
+    }
+    .footage{
+      position: relative;
+      left: 30%;
+    }
+  }
+
+
+
+  
